@@ -549,6 +549,13 @@ body {
     gap: 12px;
 }
 
+.catalog--items--item--infa {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
 .clickProduct {
     display: flex;
     flex-direction: column;
@@ -1132,6 +1139,11 @@ body {
     display: none;
 }
 
+.catalog--buttonMobile {
+    display: none;
+
+}
+
 
 
 @media screen and (max-width: 400px) {
@@ -1242,11 +1254,11 @@ body {
 
     .about--left p,
     .about--right--blocks--block--main {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .about--right--text p {
-        font-size: 12px;
+        font-size: 14px;
         width: 311px;
     }
 
@@ -1354,7 +1366,8 @@ body {
     .contacts--right {
         width: max-content;
     }
-    .contacts--right--text{
+
+    .contacts--right--text {
         margin-left: 22px;
     }
 
@@ -1435,155 +1448,151 @@ body {
         margin-top: 31px;
         background-color: #F4F4F4;
 
-        margin-left: -270px;
-        margin-right: -270px;
+        margin-left: -32px;
+        margin-right: -32px;
     }
 
     .filter--count {
         display: flex;
         flex-direction: column;
         gap: 28px;
-        margin-left: 270px;
-        margin-right: 402px;
+        margin-left: 32px;
+        margin-right: 0px;
         padding-top: 29px;
-        padding-bottom: 43px;
+        padding-bottom: 31px;
     }
 
 
     .filter--textPath a,
     .filter--textPath p {
-        font-size: 24px;
-        font-weight: 500;
-        color: #4c4c4c;
+        font-size: 11px;
     }
 
     .filter--textCategory {
         display: flex;
-        gap: 81px;
         align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 49px;
+        width: 311px;
 
     }
 
     .filter--textCategory--name {
-        font-size: 50px;
-        font-weight: 900;
-        color: #4c4c4c;
+        font-size: 15px;
+        width: 189px;
     }
 
     .filter--textCategory--text {
-
-        font-size: 32px;
-        font-weight: 500;
-        color: #4c4c4c;
+        font-size: 12px;
     }
 
     .filter--items {
+        display: none;
+    }
+
+    .filterExtraMobile {
+        margin-top: 20px;
         display: flex;
-        flex-wrap: wrap;
-        gap: 22px;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 310px;
+        height: 20px;
     }
 
     .filter--items--item {
-
-        border-radius: 25px;
-        padding: 10px;
         width: max-content;
-        height: 56px;
-        background: #fff;
-
+        height: 20px;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 10px;
+        gap: 8px;
     }
 
-    .filter--items--item p {
-        font-family: 'SofiaSans', sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        color: #4c4c4c;
+    .filter--items--item--icon {
+        width: 12.69px;
+        height: 15px;
     }
 
     .filterExtra {
-        display: flex;
-
+        display: none;
         flex-direction: column;
-        width: 1053px;
-        gap: 45px;
-    }
-
-    .filterExtra--items {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
+        width: 0px;
+        gap: 0px;
     }
 
     .filter--items--item--text p {
         font-family: 'SofiaSans', sans-serif;
-        font-weight: 500;
-        font-size: 23px;
+        font-weight: 400;
+        font-size: 17px;
         color: #000;
     }
 
-
-
-    .filter--items--item--icon {
+    .catalog {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .catalog {
-        margin-top: 33px;
+        margin-top: 20px;
     }
 
     .catalog--items {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        row-gap: 30px;
-        column-gap: 60px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 25px;
     }
 
     .catalog--items--item {
         position: relative;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 12px;
+        width: 310px;
+        height: 155px;
+    }
+
+    .catalog--items--item--infa {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 26px;
+        width: 156px;
+        height: 142px;
+        margin-left: 10px;
     }
 
     .clickProduct {
         display: flex;
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: row;
+        gap: 0px;
     }
-
 
     .catalog--items--item--icon img {
         position: absolute;
-        right: 20px;
-        top: 20px;
+        left: 111px;
+        top: 10px;
+        width: 23px;
+        height: 20px;
     }
 
     .catalog--items--item--img img {
-        width: 300px;
-        height: 330px;
+        width: 144px;
+        height: 155px;
     }
 
     .catalog--items--item--name {
         font-family: 'SofiaSans', sans-serif;
         font-weight: 400;
-        font-size: 19px;
+        font-size: 14px;
         color: #000;
     }
 
     .catalog--items--item--price {
         font-family: 'SofiaSans', sans-serif;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 15px;
         color: #000;
     }
 
@@ -1594,28 +1603,41 @@ body {
         flex-direction: row;
         gap: 5px;
         padding: 10px 5px;
-        width: 300px;
-        height: 49px;
-        padding: 10px 5px;
-        width: 300px;
-        height: 49px;
+        width: 156px;
         background: #f39237;
+        height: 38px;
     }
 
     .catalog--items--item--button p {
-        font-family: 'SofiaSans', sans-serif;
-        font-weight: 400;
-        font-size: 24px;
-        color: #fff;
+        font-size: 17px;
+    }
+
+    .catalog--buttonMobile {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5px;
+        border: 2px solid #f39237;
+        padding: 10px 5px;
+        width: 157px;
+        background: #fff;
+        height: 38px;
+    }
+
+    .catalog--buttonMobile p {
+        color: #f39237;
+        font-size: 17px;
+        font-weight: 600;
     }
 
     .product {
-        margin-top: 31px;
+        margin-top: 14px;
     }
 
     .product--path {
-        display: flex;
-        margin-bottom: 46px;
+        display: none;
     }
 
     .product--path p,
@@ -1623,34 +1645,44 @@ body {
         font-weight: 500;
         font-size: 24px;
         color: #4c4c4c;
-
     }
 
     .product--image {
         position: relative;
-
     }
 
     .product--blocks {
         display: flex;
-
+        flex-direction: column;
     }
 
     .product--image--arrows--left {
         position: absolute;
-        top: 288px;
-        left: 14px;
+        top: 225px;
+        left: 0px;
+    }
+
+    .product--image--arrows--left img,
+    .product--image--arrows--right img {
+        width: 22.16px;
+        height: 49.56px;
     }
 
     .product--image--arrows--right {
         position: absolute;
-        top: 288px;
-        right: 14px;
+        top: 225px;
+        right: 0px;
+    }
+
+    .product--image--img {
+        margin-left: -32px;
+        margin-right: -32px;
+
     }
 
     .product--image--img img {
-        width: 450px;
-        height: 675px;
+        width: 375px;
+        height: 499px;
     }
 
     .product--about {
@@ -1658,109 +1690,57 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-        gap: 26px;
-        margin-left: 46px;
+        gap: 10px;
+        margin-left: 0px;
     }
 
     .product--about--name p {
-
-        font-weight: 500;
-        font-size: 30px;
-        color: #000;
+        font-size: 21px;
     }
 
     .product--about--price p {
-
-        font-weight: 500;
-        font-size: 35px;
-        color: #000;
+        font-size: 26px;
     }
 
     .product--about--colors p {
-
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 1.4;
-        color: #5e5e5e;
+        font-size: 16px;
     }
 
     .product--about--size {
-        display: flex;
-        flex-direction: column;
         gap: 10px;
-        margin-top: -20px;
+        margin-top: 0px;
     }
 
     .product--about--size--name {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 1.4;
-        color: #5e5e5e;
+        font-size: 16px;
     }
 
     .product--about--size--items {
         display: flex;
         gap: 11px;
-
-    }
-
-    .product--about--size--items--item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        border: 1px solid #4c4c4c;
-        padding: 5px 15px;
-        width: max-content;
-        height: max-content;
-
     }
 
     .product--about--size--items--item p {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 1.4;
-        color: #5e5e5e;
-
+        font-size: 16px;
     }
 
     .product--about--addCart {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 10px;
-        border: 3px solid #f39237;
-        padding: 15px 30px;
-        width: 244px;
+        width: 311px;
         height: 58px;
     }
 
     .product--about--addCart p {
-        font-weight: 400;
         font-size: 20px;
-        line-height: 1.4;
-        color: #000;
     }
 
     .product--about--text {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.4;
-        text-align: justify;
-        color: #162a43;
+        display: none;
     }
 
     .product--about--textExtra {
-        width: 740px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.4;
-        text-align: justify;
-        color: #000;
+        width: 311px;
+        font-size: 15px;
     }
-
 
     .cart {
         display: flex;
@@ -1778,30 +1758,24 @@ body {
     }
 
     .cart--title--main p {
-        font-size: 60px;
-        font-weight: 900;
-        letter-spacing: 0.08em;
-        color: #4c4c4c;
+        font-size: 30px;
     }
 
-    .cart--title--text p {
-        font-size: 26px;
-        font-weight: 400;
-        letter-spacing: 0.08em;
-        color: #5e5e5e;
+    .cart--title--text {
+        display: none;
     }
 
     .cart--blocks {
         display: flex;
-        gap: 60px;
+        flex-direction: column;
+        gap: 0px;
     }
 
     .cart--blocks--products {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 23px;
     }
-
 
     .cart--blocks--cart {
 
@@ -1810,20 +1784,19 @@ body {
         justify-content: flex-start;
         flex-direction: column;
         gap: 38px;
-        width: 420px;
-        height: 269px;
+        width: max-content;
+        height: max-content;
     }
 
     .cart--blocks--products--actions {
 
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
-        gap: 397px;
-
-        width: 897px;
-        height: 31px;
+        gap: 52px;
+        width: 310px;
+        height: 22px;
 
     }
 
@@ -1836,104 +1809,89 @@ body {
 
     .cart--blocks--products--actions--select input[type="checkbox"] {
         display: none;
-        /* Скрыть дефолтный чекбокс */
     }
 
     /* Стилизация кастомного чекбокса */
     .cart--blocks--products--actions--select input[type="checkbox"]+label:before {
         content: "";
         display: inline-block;
-        width: 30px;
-        height: 30px;
-        border: 1px solid #767676;
-        /* Рамка кастомного чекбокса */
+        width: 22px;
+        height: 22px;
+
         border-radius: 4px;
         /* Скругление углов */
 
-        margin-right: 25px;
-        /* Отступ между чекбоксом и текстом */
+        margin-right: 11.79px;
     }
 
     .cart--blocks--products--product input[type="checkbox"] {
         content: "";
         display: inline-block;
-        width: 30px;
-        height: 30px;
+        width: 22px;
+        height: 22px;
         border: 1px solid #767676;
-        /* Рамка кастомного чекбокса */
-        border-radius: 4px;
-        /* Скругление углов */
 
-        margin-right: 25px;
-        /* Отступ между чекбоксом и текстом */
+        border-radius: 4px;
+        margin-right: 0px;
+    }
+
+    #selectProduct {
+        display: none;
     }
 
     .cart--blocks--products--actions--select input[type="checkbox"]:checked+label:before {
         background-color: #767676;
-        /* Цвет кастомного чекбокса, когда он выбран */
     }
 
     .cart--blocks--products--product input[type="checkbox"]:checked {
         background-color: #767676;
-        /* Цвет кастомного чекбокса, когда он выбран */
     }
 
 
     .cart--blocks--products--actions--select label {
-        cursor: pointer;
-        /* Курсор при наведении на текст */
         display: flex;
-        justify-content: center;
-        font-weight: 400;
-        font-size: 26px;
-        letter-spacing: 0.08em;
-        color: #5e5e5e;
+        align-items: center;
+        font-size: 13px;
     }
 
 
     .cart--blocks--products--actions--delete p {
-        font-size: 26px;
-        font-weight: 400;
-        letter-spacing: 0.08em;
-        color: #5e5e5e;
+        font-size: 13px;
     }
 
     .cart--blocks--products--list {
-        padding: 18px 15px;
-        width: 895px;
-        height: 68px;
+        margin-left: -32px;
+        margin-right: 0px;
+        padding: 25px 32px;
+        width: 375px;
+        height: 69px;
 
         display: flex;
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 615px;
+        gap: 173px;
 
-        background: #f4f4f4;
     }
 
     .cart--blocks--products--list--count p {
-        font-size: 26px;
-        font-weight: 400;
-        letter-spacing: 0.08em;
-        color: #000;
+        font-size: 16px;
     }
 
 
     .cart--blocks--products--product {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         flex-direction: row;
-        gap: 87px;
-
-        width: 881px;
-        height: 230px;
+        gap: 17px;
+        width: 305px;
+        height: 202px;
     }
 
     .cart--blocks--products--product img {
-        width: 153px;
-        height: 230px;
+        width: 107px;
+        height: 160px;
     }
 
     .cart--blocks--products--product--infa {
@@ -1941,22 +1899,17 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-        gap: 29px;
-        width: 345px;
+        gap: 10px;
+        width: 188px;
+        height: 163px;
     }
 
     .cart--blocks--products--product--infa--name p {
-        font-weight: 500;
-        font-size: 24px;
-
-        color: #000;
+        font-size: 13px;
     }
 
     .cart--blocks--products--product--infa--color p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.4;
-        color: #5e5e5e;
+        font-size: 11px;
     }
 
     .cart--blocks--products--product--infa--button {
@@ -1965,29 +1918,21 @@ body {
         justify-content: center;
         flex-direction: row;
         gap: 10px;
-
         padding: 10px;
-        width: 240px;
-        height: 42px;
-
+        width: 188px;
+        height: 27px;
         background: #99d4ff;
-
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-
     }
 
     .cart--blocks--products--product--infa--button p {
-
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.4;
-        color: #0064ac;
+        font-size: 12px;
     }
 
     .cart--blocks--products--count {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         flex-direction: column;
         gap: 12px;
     }
@@ -2058,15 +2003,17 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-        gap: 24px;
+        gap: 10px;
+
         border: 1px solid #000;
-        padding: 16px 23px;
-        width: 419px;
-        height: 173px;
+        padding: 15px 10px;
+        width: 310px;
+        height: 128px;
+
     }
 
-    .cart--blocks--cart--infa--main {
-        font: 500 32px "Sofia Sans", sans-serif;
+    .cart--blocks--cart--infa--main p {
+        font: 500 26px "Sofia Sans", sans-serif;
         color: #000;
     }
 
@@ -2075,16 +2022,16 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 160px;
+        gap: 102px;
     }
 
     .cart--blocks--cart--infa--count--text {
-        font: 300 20px "Sofia Sans", sans-serif;
+        font: 300 16px "Sofia Sans", sans-serif;
         color: #000;
     }
 
     .cart--blocks--cart--infa--count--price {
-        font: 300 20px "Sofia Sans", sans-serif;
+        font: 300 16px "Sofia Sans", sans-serif;
         color: #000;
     }
 
@@ -2093,34 +2040,36 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 174px;
+        gap: 103px;
     }
 
     .cart--blocks--cart--infa--end--text {
-        font: 400 26px "Sofia Sans", sans-serif;
+        font: 400 23px "Sofia Sans", sans-serif;
         letter-spacing: 0.08em;
         color: #000;
     }
 
     .cart--blocks--cart--infa--end--price {
-        font: 500 26px "Sofia Sans", sans-serif;
+        font: 500 23px "Sofia Sans", sans-serif;
         color: #000;
     }
 
     .cart--blocks--cart--endButton {
+        margin-left: -32px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         gap: 10px;
         padding: 10px;
-        width: 420px;
+        width: 375px;
         height: 58px;
         background: #0064ac;
     }
 
     .cart--blocks--cart--endButton p {
-        font: 500 20px "Sofia Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
         color: #f3f3f3;
     }
 

@@ -11,14 +11,18 @@
 <body>
     <div class="header">
         <div class="header--logo_img"><img src="assets/icons/logoDesktop.svg" alt=""></div>
+        <div class="header--logo_imgMobile"><img src="assets/icons/logoMobile.svg" alt=""></div>
+        <input type="checkbox" name="" class="burgerCheck" id="burger">
+        <label for="burger" class="burger"><img src="assets/icons/burger.svg" alt=""><span
+                class="burger-text">КАТАЛОГ</span></label>
+
+
         <div class="header--items">
             <div class="header--items--item">
                 <a href="catalog.html">МУЖСКАЯ</a>
-
             </div>
             <div class="header--items--item">
                 <a href="catalog.html">ЖЕНСКАЯ</a>
-
             </div>
             <div class="header--items--item">
                 <a href="catalog.html">ДЕТСКАЯ</a>
@@ -28,11 +32,8 @@
             <div class="header--icons--icon"><img src="assets/icons/Acount.svg" alt=""></div>
             <div class="header--icons--icon"><img src="assets/icons/Like.svg" alt=""></div>
             <a href="cart.html" class="header--icons--icon"><img src="assets/icons/bag.svg" alt=""></a>
-
         </div>
     </div>
-
-
 
     <div class="headerTwo">
 
@@ -130,7 +131,6 @@
                 </div>
             </div>
 
-
             <div class="filter--items--item">
                 <div class="filter--items--item--text">
                     <p>Размер</p>
@@ -181,6 +181,18 @@
         </div>
     </div>
 
+    <div class="filterExtraMobile">
+        <div class="filter--items--item">
+            <div class="filter--items--item--text">
+                <p>По популярности</p>
+            </div>
+            <div class="filter--items--item--icon">
+                <img src="assets/icons/arrow_down.svg" alt="">
+            </div>
+        </div>
+        <div class="filter--icon"><img src="assets/icons/filter.svg" alt=""></div>
+    </div>
+
 
     <div class="catalog">
         <div class="catalog--items">
@@ -188,13 +200,16 @@
                 <a href="product.html" class="clickProduct">
                     <div class="catalog--items--item--icon"><img src="assets/icons/heart.svg" alt=""></div>
                     <div class="catalog--items--item--img"><img src="assets/images/catalog1.png" alt=""></div>
-                    <div class="catalog--items--item--name">Горные лыжи Scott Pure Pow 115</div>
-                    <div class="catalog--items--item--price">103 499 ₽</div>
+                    <div class="catalog--items--item--infa">
+                        <div class="catalog--items--item--name">Горные лыжи Scott Pure Pow 115</div>
+                        <div class="catalog--items--item--price">103 499 ₽</div>
+                        <div class="catalog--items--item--button">
+                            <p>В КОРЗИНУ</p>
+                        </div>
+                    </div>
                 </a>
 
-                <div class="catalog--items--item--button">
-                    <p>В КОРЗИНУ</p>
-                </div>
+
             </div>
 
             <div class="catalog--items--item">
@@ -203,13 +218,18 @@
                     <div class="catalog--items--item--icon"><img src="assets/icons/heart.svg" alt=""></div>
 
                     <div class="catalog--items--item--img"><img src="assets/images/catalog2.png" alt=""></div>
-                    <div class="catalog--items--item--name">Перчатки Glissade</div>
-                    <div class="catalog--items--item--price">1 699 ₽</div>
+
+                    <div class="catalog--items--item--infa">
+                        <div class="catalog--items--item--name">Перчатки Glissade</div>
+                        <div class="catalog--items--item--price">1 699 ₽</div>
+                        <div class="catalog--items--item--button">
+                            <p>В КОРЗИНУ</p>
+                        </div>
+                    </div>
+
                 </a>
 
-                <div class="catalog--items--item--button">
-                    <p>В КОРЗИНУ</p>
-                </div>
+
 
             </div>
 
@@ -219,13 +239,18 @@
                     <div class="catalog--items--item--icon"><img src="assets/icons/heart.svg" alt=""></div>
 
                     <div class="catalog--items--item--img"><img src="assets/images/catalog3.png" alt=""></div>
-                    <div class="catalog--items--item--name">Балаклава детская Glissade</div>
-                    <div class="catalog--items--item--price">499 ₽</div>
+
+
+                    <div class="catalog--items--item--infa">
+                        <div class="catalog--items--item--name">Балаклава детская Glissade</div>
+                        <div class="catalog--items--item--price">499 ₽</div>
+                        <div class="catalog--items--item--button">
+                            <p>В КОРЗИНУ</p>
+                        </div>
+                    </div>
 
                 </a>
-                <div class="catalog--items--item--button">
-                    <p>В КОРЗИНУ</p>
-                </div>
+
             </div>
 
             <div class="catalog--items--item">
@@ -234,13 +259,18 @@
                     <div class="catalog--items--item--icon"><img src="assets/icons/heart.svg" alt=""></div>
 
                     <div class="catalog--items--item--img"><img src="assets/images/catalog4.png" alt=""></div>
-                    <div class="catalog--items--item--name">Куртка утепленная мужская Volkl</div>
-                    <div class="catalog--items--item--price">13 299 ₽</div>
+
+
+                    <div class="catalog--items--item--infa">
+                        <div class="catalog--items--item--name">Куртка утепленная мужская Volkl</div>
+                        <div class="catalog--items--item--price">13 299 ₽</div>
+                        <div class="catalog--items--item--button">
+                            <p>В КОРЗИНУ</p>
+                        </div>
+                    </div>
 
                 </a>
-                <div class="catalog--items--item--button">
-                    <p>В КОРЗИНУ</p>
-                </div>
+
             </div>
 
             <div class="catalog--items--item">
@@ -249,13 +279,19 @@
                     <div class="catalog--items--item--icon"><img src="assets/icons/heart.svg" alt=""></div>
 
                     <div class="catalog--items--item--img"><img src="assets/images/catalog5.png" alt=""></div>
-                    <div class="catalog--items--item--name">Палки горнолыжные Glissade</div>
-                    <div class="catalog--items--item--price">2 199 ₽</div>
+
+
+
+                    <div class="catalog--items--item--infa">
+                        <div class="catalog--items--item--name">Палки горнолыжные Glissade</div>
+                        <div class="catalog--items--item--price">2 199 ₽</div>
+                        <div class="catalog--items--item--button">
+                            <p>В КОРЗИНУ</p>
+                        </div>
+                    </div>
 
                 </a>
-                <div class="catalog--items--item--button">
-                    <p>В КОРЗИНУ</p>
-                </div>
+
             </div>
 
             <div class="catalog--items--item">
@@ -264,13 +300,17 @@
                     <div class="catalog--items--item--icon"><img src="assets/icons/heart.svg" alt=""></div>
 
                     <div class="catalog--items--item--img"><img src="assets/images/catalog6.png" alt=""></div>
-                    <div class="catalog--items--item--name">Шлем Glissade Bomber</div>
-                    <div class="catalog--items--item--price">6 719 ₽</div>
+
+
+                    <div class="catalog--items--item--infa">
+                        <div class="catalog--items--item--name">Шлем Glissade Bomber</div>
+                        <div class="catalog--items--item--price">6 719 ₽</div>
+                        <div class="catalog--items--item--button">
+                            <p>В КОРЗИНУ</p>
+                        </div>
+                    </div>
 
                 </a>
-                <div class="catalog--items--item--button">
-                    <p>В КОРЗИНУ</p>
-                </div>
             </div>
 
             <div class="catalog--items--item">
@@ -279,13 +319,18 @@
                     <div class="catalog--items--item--icon"><img src="assets/icons/heart.svg" alt=""></div>
 
                     <div class="catalog--items--item--img"><img src="assets/images/catalog7.png" alt=""></div>
-                    <div class="catalog--items--item--name">Сумка для ботинок Glissade</div>
-                    <div class="catalog--items--item--price">2 199 ₽</div>
+
+
+                    <div class="catalog--items--item--infa">
+                        <div class="catalog--items--item--name">Сумка для ботинок Glissade</div>
+                        <div class="catalog--items--item--price">2 199 ₽</div>
+                        <div class="catalog--items--item--button">
+                            <p>В КОРЗИНУ</p>
+                        </div>
+                    </div>
 
                 </a>
-                <div class="catalog--items--item--button">
-                    <p>В КОРЗИНУ</p>
-                </div>
+
             </div>
 
             <div class="catalog--items--item">
@@ -294,15 +339,23 @@
                     <div class="catalog--items--item--icon"><img src="assets/icons/heart.svg" alt=""></div>
 
                     <div class="catalog--items--item--img"><img src="assets/images/catalog8.png" alt=""></div>
-                    <div class="catalog--items--item--name">Термобелье верх мужское Glissade</div>
-                    <div class="catalog--items--item--price">1 999 ₽</div>
+
+
+                    <div class="catalog--items--item--infa">
+                        <div class="catalog--items--item--name">Термобелье верх мужское Glissade</div>
+                        <div class="catalog--items--item--price">1 999 ₽</div>
+                        <div class="catalog--items--item--button">
+                            <p>В КОРЗИНУ</p>
+                        </div>
+                    </div>
 
                 </a>
-                <div class="catalog--items--item--button">
-                    <p>В КОРЗИНУ</p>
-                </div>
             </div>
         </div>
+        <div class="catalog--buttonMobile">
+            <p>ПОКАЗАТЬ ЕЩЁ</p>
+        </div>
+
     </div>
     <div class="footer">
 

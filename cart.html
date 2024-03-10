@@ -11,14 +11,18 @@
 <body>
     <div class="header">
         <div class="header--logo_img"><img src="assets/icons/logoDesktop.svg" alt=""></div>
+        <div class="header--logo_imgMobile"><img src="assets/icons/logoMobile.svg" alt=""></div>
+        <input type="checkbox" name="" class="burgerCheck" id="burger">
+        <label for="burger" class="burger"><img src="assets/icons/burger.svg" alt=""><span
+                class="burger-text">КАТАЛОГ</span></label>
+
+
         <div class="header--items">
             <div class="header--items--item">
                 <a href="catalog.html">МУЖСКАЯ</a>
-
             </div>
             <div class="header--items--item">
                 <a href="catalog.html">ЖЕНСКАЯ</a>
-
             </div>
             <div class="header--items--item">
                 <a href="catalog.html">ДЕТСКАЯ</a>
@@ -64,7 +68,7 @@
                 </div>
 
                 <div class="cart--blocks--products--product">
-                    <input type="checkbox" id="selectAllCheckbox">
+                    <input type="checkbox" id="selectProduct">
                     <img src="assets/images/iamgeCart.png" alt="">
                     <div class="cart--blocks--products--product--infa">
                         <div class="cart--blocks--products--product--infa--name">
@@ -76,24 +80,25 @@
                         <div class="cart--blocks--products--product--infa--button">
                             <p>С этим товаром покупают</p>
                         </div>
-                    </div>
-                    <div class="cart--blocks--products--count">
-                        <div class="cart--blocks--products--count--counter">
-                            <div class="counter--minus">
-                                <img src="assets/icons/min.svg" alt="">
+                        <div class="cart--blocks--products--count">
+                            <div class="cart--blocks--products--count--counter">
+                                <div class="counter--minus">
+                                    <img src="assets/icons/min.svg" alt="">
+                                </div>
+                                <div class="counter--count">
+                                    <p>1</p>
+                                </div>
+                                <div class="counter--plus">
+                                    <img src="assets/icons/plus.svg" alt="">
+                                </div>
                             </div>
-                            <div class="counter--count">
-                                <p>1</p>
+                            <div class="cart--blocks--products--count--price">
+                                <p>103 499 ₽</p>
                             </div>
-                            <div class="counter--plus">
-                                <img src="assets/icons/plus.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="cart--blocks--products--count--price">
-                            <p>103 499 ₽</p>
-                        </div>
 
+                        </div>
                     </div>
+
 
                 </div>
 
