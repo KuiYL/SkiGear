@@ -1144,6 +1144,9 @@ body {
 
 }
 
+.mobileNav {
+    display: none;
+}
 
 
 @media screen and (max-width: 400px) {
@@ -2083,5 +2086,55 @@ body {
         font-weight: 500;
         color: #f3f3f3;
     }
+    .mobileNav {
+        position: fixed;
+        bottom: 0;
+        left: 0; /* Можно также использовать right: 0; для выравнивания по правому краю */
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: #fff; /* Цвет фона вашей навигации */
+        border-top: 1px solid #ccc; /* Линия-разделитель навигации и содержимого страницы */
+        display: flex;
+        justify-content: center; /* Равномерное распределение элементов по ширине */
 
+        padding: 10px 20px; /* Внутренние отступы */
+        box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Тень под навигацией */
+    }
+    
+    .mobileNav--items {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+        justify-content: center ;
+        gap: 30px;
+        /* Выравнивание элементов по вертикали */
+    }
+    .mobileNav--items--item a{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center ;
+        gap: 4px;
+        margin: 0; /* Убираем внешние отступы */
+        padding: 0; /* Убираем внутренние отступы */
+        border: none; /* Убираем границы */
+        width: 100%;
+    }
+    
+    
+    .mobileNav--items--item img {
+        width: 30px; /* Устанавливаем ширину изображений */
+        height: 30px; /* Автоматический расчет высоты */
+    }
+    
+    .mobileNav--items--item p {
+        margin: 0; /* Убираем внешние отступы */
+        font-size: 16px; /* Размер текста */
+        color: #333; /* Цвет текста */
+        font-weight: bold; /* Жирный шрифт */
+    }
+    
+    
+    
 }
