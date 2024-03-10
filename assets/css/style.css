@@ -1748,16 +1748,16 @@ body {
         font-size: 15px;
     }
 
-    .cart {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        margin-top: 70px;
-        width: 100%; /* Растягиваем на всю ширину экрана */
-        height: max-content;
-        margin-left: 0; /* Убираем отрицательный отступ */
-        margin-right: 0; /* Убираем отрицательный отступ */
-    }
+.cart {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 70px;
+    width: 100%; /* Растягиваем на всю ширину экрана */
+    height: max-content;
+    margin-left: 0; /* Убираем отрицательный отступ */
+    margin-right: 0; /* Убираем отрицательный отступ */
+}
     
 
     .cart--title {
@@ -1780,6 +1780,9 @@ body {
         display: flex;
         flex-direction: column;
         gap: 0px;
+        width: 100%; /* Растягиваем на всю ширину экрана */
+        margin-left: 0; /* Убираем отрицательный отступ */
+        margin-right: 0; /* Убираем отрицательный отступ */
     }
 
     .cart--blocks--products {
@@ -1789,13 +1792,12 @@ body {
     }
 
     .cart--blocks--cart {
-
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items:center;
+        justify-content: center;
         flex-direction: column;
-        gap: 38px;
-        width: max-content;
+        gap: 24px;
+        width: 100%; /* Растягиваем на всю ширину экрана */
         height: max-content;
     }
 
@@ -2066,19 +2068,16 @@ body {
     }
 
     .cart--blocks--cart--endButton {
-        margin-left: -32px;
+        margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: row;
         gap: 10px;
         padding: 10px;
-        
-
+        width: 100%; /* Растягиваем на всю ширину экрана */
         height: 58px;
         background: #0064ac;
     }
-
     .cart--blocks--cart--endButton p {
         font-size: 20px;
         font-weight: 500;
