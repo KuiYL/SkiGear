@@ -1746,7 +1746,8 @@ body {
         display: flex;
         flex-direction: column;
         gap: 50px;
-        margin-top: 70px
+        margin-top: 70px;
+        margin-right: -32px;
     }
 
     .cart--title {
