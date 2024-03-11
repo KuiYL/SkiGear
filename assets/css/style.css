@@ -1148,6 +1148,13 @@ body {
     display: none;
 }
 
+.filterExtraMobile {
+    display: none;
+
+}
+
+
+
 
 @media screen and (max-width: 400px) {
 
@@ -2124,8 +2131,8 @@ body {
     
     
     .mobileNav--items--item img {
-        width: 30px; /* Устанавливаем ширину изображений */
-        height: 30px; /* Автоматический расчет высоты */
+        width: 24px; /* Устанавливаем ширину изображений */
+        height: 24px; /* Автоматический расчет высоты */
     }
     
     .mobileNav--items--item p {
